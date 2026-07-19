@@ -1,3 +1,5 @@
+package Clases;
+
 public class Empleado {
 
     private String nombre;
@@ -16,10 +18,14 @@ public class Empleado {
 
         if (salario >= 0) {
             this.salario = salario;
-        } else {
-            this.salario = 0;
+        }
+        else {
             System.out.println("El salario no puede ser negativo.");
+            this.salario = 0;
         }
 
     }
+
+    public String getNombre() {return  nombre; }
+    public double getSalario() {return  salario; }
 }
